@@ -30,10 +30,17 @@
           <span>Point Caffee</span>
         </div>
 
-        <div class="nav-menu">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Menu</a>
+        <div class="nav-center">
+          <div class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Menu</a>
+          </div>
+
+          <div class="search-box">
+            <i data-feather="search"></i>
+            <input type="text" placeholder="Search in here.." />
+          </div>
         </div>
 
         <div class="nav-icons">
@@ -42,7 +49,28 @@
           <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
         </div>
       </nav>
+
+      <!-- ACCOUNT FLOATING -->
+      <div class="account-floating">
+        <a href="#">
+          <i data-feather="user"></i>
+        </a>
+      </div>
     </header>
+
+    <!-- ================================= -->
+    <!-- HAMBURGER MENU -->
+    <!-- ================================= -->
+
+    <div class="menu-overlay"></div>
+
+    <div class="hamburger-panel">
+      <a href="#"> Home </a>
+
+      <a href="#"> About </a>
+
+      <a href="#"> Menu </a>
+    </div>
 
     <!-- ========================= -->
     <!-- HERO SECTION -->
@@ -120,5 +148,6 @@
     <script>
       feather.replace();
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
