@@ -36,9 +36,13 @@ body{
     width:100%;
     z-index:999;
     padding:1rem 5%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .navbar{
+    flex: 1;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -121,10 +125,10 @@ body{
 /* ================================= */
 
 .account-floating{
-    position:fixed;
-
-    top:23px;
-    right:25px;
+    flex-shrink: o;
+    position:relative;
+    top:auto;
+    right:auto;
 
     z-index:1001;
 }
@@ -478,7 +482,33 @@ body{
 /* TABLET */
 /* ================================= */
 
-@media(max-width:992px){
+@media(max-width:1024px){
+    .header{
+        padding: 1rem 3%;
+        gap: 12px;
+    }
+
+    .navbar{
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-center{
+        flex: 1;
+        justify-content: center;
+    }
+    
+    .nav-menu{
+        display: none;
+    }
+    
+    .search-box{
+        width: 220px;
+    }
+
+    .account-floating a{
+        width: 54px;
+        height: 54px;
+    }
 
     .hero-content{
         grid-template-columns:1fr;
@@ -500,7 +530,17 @@ body{
 
 @media(max-width:768px){
     .header{
-        width: calc(100% - 75px);
+        padding: 1rem;
+        gap: 10px;
+    }
+
+    .navbar{
+        flex: 1;
+        padding: 1rem 1.2rem;
+    }
+
+    .logo{
+        font-size: 1.2rem;
     }
 
     .nav-menu{
@@ -511,8 +551,22 @@ body{
         display: none;
     }
 
+    .nav-icons{
+        gap: .8rem;
+    }
+
+    .nav-icons svg{
+        width: 20px;
+        height: 20px;
+    }
+
     .account-floating{
-        right: 15px;
+        margin-left: 12px;
+    }
+
+    .account-floating a{
+        width: 50px;
+        height: 50px;
     }
 
     .hero-text h1{
