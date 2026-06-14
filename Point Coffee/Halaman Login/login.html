@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Point Caffee Auth</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <section class="auth-container">
+      <div class="auth-box">
+        <!-- PANEL FOTO -->
+
+        <div class="image-panel">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80"
+            alt="Coffee"
+          />
+
+          <div class="overlay"></div>
+
+          <div class="hero-content">
+            <span>POINT CAFFEE</span>
+
+            <h2>Brew Better, Live Greener.</h2>
+
+            <p>Premium coffee experience with modern lifestyle.</p>
+          </div>
+        </div>
+
+        <!-- LOGIN -->
+
+        <div class="login-avatar">
+          <i class="account-icon"></i>
+        </div>
+        <div class="form-panel login-panel">
+          <div class="brand">Point Caffee</div>
+
+          <div class="form-content">
+            <h1>Welcome Back</h1>
+
+            <form>
+              <div class="input-group">
+                <label>Email</label>
+
+                <input type="email" placeholder="Enter your email" />
+              </div>
+
+              <div class="input-group">
+                <label>Password</label>
+
+                <div class="password-box">
+                  <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter password"
+                  />
+
+                  <i
+                    data-feather="eye"
+                    class="password-toggle"
+                    id="loginToggle"
+                  >
+                  </i>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-primary">Login</button>
+            </form>
+
+            <p class="switch-text">
+              Don't have an account?
+
+              <button class="switch-btn" id="showRegister">
+                Create Account
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <!-- REGISTER -->
+
+        <div class="form-panel register-panel">
+          <div class="brand">Point Caffee</div>
+
+          <div class="form-content">
+            <h1>Create Account</h1>
+
+            <form>
+              <div class="input-group">
+                <label>Full Name</label>
+
+                <input type="text" placeholder="Enter your name" />
+              </div>
+
+              <div class="input-group">
+                <label>Email</label>
+
+                <input type="email" placeholder="Enter your email" />
+              </div>
+
+              <div class="input-group">
+                <label>Password</label>
+
+                <div class="password-box">
+                  <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create password"
+                  />
+
+                  <i
+                    data-feather="eye"
+                    class="password-toggle"
+                    id="registerToggle"
+                  >
+                  </i>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label>Confirm Password</label>
+
+                <input type="password" placeholder="Confirm password" />
+              </div>
+
+              <button type="submit" class="btn-primary">Create Account</button>
+            </form>
+
+            <p class="switch-text">
+              Already have an account?
+
+              <button class="switch-btn" id="showLogin">Login</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="login.js"></script>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

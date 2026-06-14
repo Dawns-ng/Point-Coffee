@@ -15,6 +15,7 @@ hamburgerBtn.addEventListener("click", function(e){
 
     e.preventDefault();
 
+    hamburgerBtn.classList.toggle("active");
     hamburgerPanel.classList.toggle("active");
     menuOverlay.classList.toggle("active");
 
@@ -24,6 +25,7 @@ hamburgerBtn.addEventListener("click", function(e){
 
 menuOverlay.addEventListener("click", function(){
 
+    hamburgerBtn.classList.remove("active");
     hamburgerPanel.classList.remove("active");
     menuOverlay.classList.remove("active");
 
@@ -35,6 +37,7 @@ document.addEventListener("keydown", function(e){
 
     if(e.key === "Escape"){
 
+        hamburgerBtn.classList.remove("active");
         hamburgerPanel.classList.remove("active");
         menuOverlay.classList.remove("active");
 
@@ -51,9 +54,20 @@ document.addEventListener("click", function(e){
         !hamburgerBtn.contains(e.target)
     ){
 
+        hamburgerBtn.classList.remove("active");
         hamburgerPanel.classList.remove("active");
         menuOverlay.classList.remove("active");
 
     }
+
+});
+
+// FLOATING ACCOUNT
+const accountBtn =
+document.querySelector("#accountBtn");
+
+accountBtn.addEventListener("click", () => {
+
+    window.location.href = "/Point Coffee/Halaman Login/login.html";
 
 });
